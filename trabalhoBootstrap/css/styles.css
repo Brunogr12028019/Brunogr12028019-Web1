@@ -1,0 +1,70 @@
+.logo-topo {
+    height: 60px;       /* Define uma altura fixa para a logo não ficar gigante */
+    width: auto;         /* Mantém a proporção da largura */
+    padding: 11px 0;      /* Dá um leve respiro vertical */
+    margin-left: 50px;    /* Aumenta a margem da esquerda, ajustando a logo mara a direita*/
+    transition: 0.3s;    /* Efeito suave se você quiser mudar algo depois */
+    
+}
+
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem !important;
+    font-weight: 500;             
+    text-transform: uppercase;  
+    margin-right: 50px;  
+}
+
+.hero-section {
+    /* O linear-gradient aplica a camada escura de 40% sobre a foto */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://images.unsplash.com/photo-1545209463-e2825498edbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Faz ocupar a tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+:root {
+    --laranja-alle: #DDFF15; 
+}
+
+.btn-custom {
+    background-color: var(--laranja-alle) !important; /* Cor de fundo laranja */
+    color: #1D432D!important;                       /* Cor do texto branca */
+    padding: 12px 30px;                              /* Espaçamento interno (altura e largura) */
+    font-size: 1.1rem;                               /* Tamanho da letra */
+    font-weight: 600;                                /* Deixa a letra levemente em negrito */
+    border: none;                                    /* Remove bordas padrões */
+    border-radius: 8px;                              /* Arredondamento dos cantos igual ao Figma */
+    transition: all 0.3s ease;                       /* Suaviza as mudanças (cor e escala) */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;                           /* Remove sublinhado se for um link <a> */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);        /* Sombra leve para dar profundidade */
+}
+
+
+.btn-custom:hover {
+    background-color: #c9e913 !important;            /* Laranja um pouco mais escuro */
+    color: #1D432D !important;
+    transform: translateY(-2px);                     /* O botão "sobe" levemente */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);       /* Aumenta a sombra no hover */
+    cursor: pointer;
+}
+
+
+.btn-custom:active {
+    transform: translateY(0);                        /* O botão volta à posição original */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
