@@ -20,26 +20,28 @@
 }
 
 .hero-section {
-    /* O linear-gradient aplica a camada escura de 40% sobre a foto */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    background: linear-gradient(rgba(29, 67, 45, 0.4), rgb(29,67,45,0.4)), 
                 url('https://images.unsplash.com/photo-1545209463-e2825498edbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Faz ocupar a tela inteira */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--branco-alle);
 }
 
 :root {
-    --laranja-alle: #DDFF15; 
+    --verde-alle: #DDFF15;
+    --verdee-alle: #1D432D;
+    --branco-alle: #EDEAFC;
+
 }
 
 .btn-custom {
-    background-color: var(--laranja-alle) !important; /* Cor de fundo laranja */
+    background-color: var(--verde-alle) !important; /* Cor de fundo laranja */
     color: #1D432D!important;                       /* Cor do texto branca */
     padding: 12px 30px;                              /* Espaçamento interno (altura e largura) */
     font-size: 1.1rem;                               /* Tamanho da letra */
@@ -68,3 +70,71 @@
     transform: translateY(0);                        /* O botão volta à posição original */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.beneficios h3{
+    text-align: center !important; 
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+.col-sm h5{
+    text-align: center !important; 
+    padding-top: 1.5rem;
+}
+
+.col-sm p{
+    text-align: justify;
+}
+
+.rodape{
+    background-color: var(--verdee-alle) !important;
+    text-align: center !important;
+    padding: 25px;
+}
+
+.rodape p{
+    color: var(--branco-alle) !important;
+    text-align: center !important;
+}
+
+.rodape i{
+    font-size: 1.5rem !important;
+    color:#FFFFFF !important;
+}
+
+.espacamento{
+    margin: 60px 0 !important;
+
+}
+
+.cliente{
+    text-align: center !important;
+    background-color: var(--branco-alle) !important;
+    padding: 40px 0 !important;
+}
+
+.cliente h3{ 
+    color: var(--verdee-alle) !important;
+}
+
+.btn-cliente{
+    color: var(--branco-alle) !important;
+    background-color: var(--verdee-alle) !important;
+}
+
+.rodape{
+    background-color: var(--verdee-alle) !important;
+    text-align: center !important;
+    padding: 25px;
+}
+
+.rodape p{
+    color: var(--branco-alle) !important;
+    text-align: center !important;
+}
+
+.rodape i{
+    font-size: 1.5rem !important;
+    color:var(--branco-alle) !important;
+}
+
+
