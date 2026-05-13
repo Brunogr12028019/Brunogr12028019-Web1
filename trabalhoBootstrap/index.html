@@ -9,7 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -39,17 +41,21 @@
     </div>
   </div>
 </nav>
-
-<header class="hero-section">
-    <div class="container">
-      <div class="row justify-content-center">
-            <h1 class="hero-title">Energia Solar para um Futuro Sustentável</h1>
-            <p class="hero-subtitle">Transforme a luz do sol em economia e sustentabilidade para sua casa, fazenda ou empresa.</p>
+<header>
+  <div id="foto" class="foto">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/banner-solar.jpg" class="d-block w-100" alt="banner">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="titulo-foto">Energia Solar para um Futuro Sustentável</h1>
+            <p class="subtitulo-foto">Transforme a luz do sol em economia e sustentabilidade para sua casa, fazenda ou empresa.</p>
             <a href="contato.html" class="btn btn-custom">Solicite um Orçamento →</a>
-            </div>
-          
         </div>
-  </header>
+      </div>
+    </div>  
+  </div>  
+</header>
+  
 
   <section class="espacamento beneficios">
       <div class="container">
@@ -67,6 +73,7 @@
 
           <div class="espacamento col-sm">
             <div class="card" style="width: 18rem;">
+              <i class="bi bi-graph-up-arrow"></i>
               <h5>Sustentabilidade</h5>
               <div class="card-body">
                 <p class="card-text">Contribua para um planeta mais limpo utilizando energia renovável e limpa.</p>
@@ -76,6 +83,7 @@
 
           <div class="espacamento col-sm">
             <div class="card" style="width: 18rem;">
+              <i class="bi bi-leaf-fill"></i>
               <h5>Valorização do Imóvel</h5>
               <div class="card-body">
                 <p class="card-text">Imóveis com sistemas fotovoltaicos têm maior valor de mercado e atraem mais compradores.</p>

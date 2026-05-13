@@ -1,0 +1,167 @@
+.logo-topo {
+    height: 60px;       /* Define uma altura fixa para a logo não ficar gigante */
+    width: auto;         /* Mantém a proporção da largura */
+    padding: 11px 0;      /* Dá um leve respiro vertical */
+    margin-left: 50px;    /* Aumenta a margem da esquerda, ajustando a logo mara a direita*/
+    transition: 0.3s;    /* Efeito suave se você quiser mudar algo depois */
+    
+}
+
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem !important;
+    font-weight: 500;             
+    text-transform: uppercase;  
+    margin-right: 50px;  
+}
+
+
+
+:root {
+    --verde-alle: #DDFF15;
+    --verdee-alle: #1D432D;
+    --branco-alle: #EDEAFC;
+
+}
+
+.foto{
+    
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-caption {
+    bottom: 40% !important; /* Quanto maior a %, mais alto o texto fica */
+    transform: translateY(-50%); /* Ajuste fino de centralização vertical */
+    padding-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: var(--verde-alle) !important; 
+    color: #1D432D!important;                       
+    padding: 12px 30px;                              
+    font-size: 1.1rem;                               
+    font-weight: 600;                                
+    border: none;                                    
+    border-radius: 8px;                              
+    transition: all 0.3s ease;                       
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;                           
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);        
+}
+
+
+.btn-custom:hover {
+    background-color: #c9e913 !important;            
+    color: #1D432D !important;
+    transform: translateY(-2px);                     
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);      
+    cursor: pointer;
+}
+
+.btn-custom:active {
+    transform: translateY(0);                       
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios h3{
+    text-align: center !important; 
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+
+.bi-graph-up-arrow{
+    background-color: var(--verdee-alle);
+    font-size: 2rem !important;
+    text-align: center !important;
+    padding-top: 1.5rem;
+    width: 70px;                
+    height: 70px; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;    
+    align-items: normal;        
+    color: white;               
+    line-height: 1         
+  
+}
+
+
+.col-sm h5{
+    text-align: center !important; 
+    padding-top: 1.5rem;
+}
+
+.col-sm p{
+    text-align: justify;
+}
+
+.espacamento{
+    margin: 60px 0 !important;
+
+}
+
+.cliente{
+    text-align: left !important;
+    background-color: var(--branco-alle) !important;
+    padding: 40px 0 !important;
+}
+
+.cliente h3{ 
+    color: var(--verdee-alle) !important;
+}
+
+.btn-cliente{
+    color: var(--branco-alle) !important;
+    background-color: var(--verdee-alle) !important;
+}
+
+.rodape{
+    background-color: var(--verdee-alle) !important;
+    text-align: center !important;
+    padding: 25px;
+}
+
+.rodape p{
+    color: var(--branco-alle) !important;
+    text-align: center !important;
+}
+
+.rodape i{
+    font-size: 1.5rem !important;
+    color:var(--branco-alle) !important;
+}
+
+.texto-sobre{
+    text-align: left;
+    padding-left: 70px;
+    color: var(--verdee-alle);
+}
+
+.cliente h6{
+    font-weight: bold;
+    text-align: left;
+}
+
+.bi-geo-alt{
+    color:black !important;
+}
+
+.card-cliente h3{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.card-cliente p{
+    text-align: left;
+    padding-left: 10px;
+}
