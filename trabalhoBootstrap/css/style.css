@@ -1,12 +1,10 @@
 .logo-topo {
-    height: 60px;       /* Define uma altura fixa para a logo não ficar gigante */
-    width: auto;         /* Mantém a proporção da largura */
-    padding: 11px 0;      /* Dá um leve respiro vertical */
-    margin-left: 50px;    /* Aumenta a margem da esquerda, ajustando a logo mara a direita*/
-    transition: 0.3s;    /* Efeito suave se você quiser mudar algo depois */
-    
+    height: 60px;       
+    width: auto;         
+    padding: 11px 0;      
+    margin-left: 50px;    
+    transition: 0.3s;     
 }
-
 
 .navbar-nav {
     margin-left: auto;
@@ -19,8 +17,6 @@
     margin-right: 50px;  
 }
 
-
-
 :root {
     --verde-alle: #DDFF15;
     --verdee-alle: #1D432D;
@@ -30,17 +26,30 @@
 
 .foto{
     
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../img/banner-solar.jpg'); 
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    
     width: 100%;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    color: white;
 }
 
+
 .carousel-caption {
-    bottom: 40% !important; /* Quanto maior a %, mais alto o texto fica */
+    bottom: auto !important;
     transform: translateY(-50%); /* Ajuste fino de centralização vertical */
-    padding-bottom: 20px;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    padding: 20px;
+    text-align: center;
 }
 
 .btn-custom {
@@ -106,9 +115,10 @@
 }
 
 .espacamento{
-    margin: 60px 0 !important;
+    margin: 40px 0 !important;
 
 }
+
 
 .cliente{
     text-align: left !important;
@@ -129,6 +139,7 @@
     background-color: var(--verdee-alle) !important;
     text-align: center !important;
     padding: 25px;
+    width: 100%;
 }
 
 .rodape p{
@@ -164,4 +175,168 @@
 .card-cliente p{
     text-align: left;
     padding-left: 10px;
+}
+
+/* Cor de fundo leve para a página de contato */
+body {
+    background-color: #fcfcfc;
+}
+
+/* Círculos pequenos para os ícones de contato */
+.icon-circle-small {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 153, 0, 0.1); /* Laranja clarinho */
+    color: #ff9900;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Card de Dica Amarelo */
+.bg-light-yellow {
+    background-color: #fff9e6 !important;
+    border-left: 4px solid #ffcc00 !important;
+    color: #856404;
+}
+
+/* Ajustes nos inputs para ficarem mais elegantes */
+.form-control {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: var(--verdee-alle);
+    box-shadow: none;
+}
+
+.upload-container {
+    margin-bottom: 25px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.upload-box {
+    position: relative;
+    width: 100%;
+    padding: 35px 20px;
+    border: 1px dashed #cbd5e0; 
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    border-color: var(--verdee-alle);
+    background-color: #fcfcfc;
+}
+
+.upload-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.upload-icon {
+    font-size: 1.8rem;
+    color: #a0aec0;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.upload-text {
+    font-size: 0.95rem;
+    color: #4a5568;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.upload-hint {
+    font-size: 0.8rem;
+    color: #718096;
+    display: block;
+}
+
+
+.bg-light-section {
+    background-color: #fcfcfc !important;
+    border-radius: 15px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.icon-circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+
+.bg-blue-soft { background-color: #e7f0ff; }
+.bg-orange-soft { background-color: #fff4e5; }
+.bg-green-soft { background-color: #e6f7ed; }
+
+
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+
+.rodape i {
+    font-size: 1.5rem;
+    color: var(--branco-alle);
+    transition: 0.3s;
+}
+
+.rodape i:hover {
+    color: var(--verde-alle);
+}
+
+/* Padronização dos Círculos de Ícone */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;          /* Essencial para alinhar o ícone */
+    align-items: center;    /* Centraliza verticalmente */
+    justify-content: center;/* Centraliza horizontalmente */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.icon-circle:hover {
+    transform: scale(1.1); /* Efeito de destaque ao passar o mouse */
+}
+
+.icon-circle i {
+    font-size: 2rem; /* Tamanho do ícone */
+    display: block;  /* Garante que o ícone ocupe o espaço corretamente */
+}
+
+h3 {
+    color: var(--verdee-alle);
+    font-weight: 600;
+    margin-top: 20px;
+    border-bottom: 3px solid var(--verde-alle);
+    display: inline-block;
+    padding-bottom: 10px;
 }

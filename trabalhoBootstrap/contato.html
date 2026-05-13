@@ -42,9 +42,94 @@
   </div>
 </nav>
 
-  <main>
-    
-  </main>
+<section class="espacamento">
+<main class="container my-5">
+    <div class="row">
+        <div class="col-12 mb-4">
+            <h3> Entre em Contato</h3>
+            <p> Elaboramos uma proposta gratuita, para atender sua demanda energetica.</p>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card border-0 shadow-sm p-4 mb-4">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="icon-circle-small me-3"><i class="bi bi-envelope"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Email</h6>
+                        <small class="text-muted">alleenergia@alleenergia.com.br</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="icon-circle-small me-3"><i class="bi bi-telephone"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Telefone</h6>
+                        <small class="text-muted">(34) 99134-4134 - Bruno</small>
+                        <br>
+                        <small class="text-muted">(34) 99829-0262 - Marcony</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="icon-circle-small me-3"><i class="bi bi-geo-alt"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Endereço</h6>
+                        <small class="text-muted">Rua Cesário Alvim, 214, Sala 301, Centro, Patos de Minas - MG</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 bg-light-yellow p-3">
+                <p class="mb-0 small">
+                    <strong><i class="bi bi-lightbulb"></i> Dica:</strong><br>
+                    Para um orçamento mais preciso, anexe sua conta de energia mais recente.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="card border-0 shadow-sm p-4">
+                <h5 class="fw-bold mb-4">Solicite um Orçamento</h5>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Nome Completo *</label>
+                        <input type="text" class="form-control" placeholder="Seu nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label fw-bold small">Telefone / WhatsApp *</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="(34) 99999-9999" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Email</label>
+                        <input type="email" class="form-control" placeholder="seu@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Mensagem (opcional)</label>
+                        <textarea class="form-control" rows="4" placeholder="Conte-nos mais sobre seu projeto..."></textarea>
+                    </div>
+                    <div class="upload-container">
+                        <label class="form-label small fw-bold">Anexar Conta de Energia (PDF ou Imagem)</label>
+                        
+                        <div class="upload-box" id="upload-box">
+                        <input type="file" class="upload-input" id="file-input" accept=".pdf, .jpg, .jpeg, .png" required>
+                        
+                        <div class="upload-content" id="upload-content">
+                            <i class="bi bi-upload upload-icon"></i>
+                            <span class="upload-text">Clique para selecionar arquivo</span>
+                            <span class="upload-hint">PDF, JPG ou PNG</span>
+                        </div>
+
+                        <div id="file-info" class="d-none text-center">
+                            <i class="bi bi-file-earmark-check fs-1 text-success"></i>
+                            <p id="file-name" class="fw-bold mt-2 mb-1" style="color: var(--verdee-alle);"></p>
+                            <button type="button" class="btn btn-sm btn-outline-danger border-0" onclick="resetFile()">Remover arquivo</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100">Enviar Solicitação</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+</div>
 
   <footer class="rodape">
       <p>Copyright © 2026 Alle Energia Solar Ltda </p>
