@@ -21,6 +21,17 @@ html {
     margin-right: 50px;  
 }
 
+.navbar-nav .nav-link.active {
+    color: var(--verdee-alle) !important; 
+    font-weight: 700; 
+    border-bottom: 2px solid var(--verde-alle); 
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--verdee-alle) !important;
+    transition: 0.3s;
+}
+
 :root {
     --verde-alle: #DDFF15;
     --verdee-alle: #1D432D;
