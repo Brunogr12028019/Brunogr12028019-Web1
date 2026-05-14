@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; 
+}
+
 .logo-topo {
     height: 60px;       
     width: auto;         
@@ -26,14 +30,14 @@
 
 .foto{
     
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /*Coloca uma pelicula escura na imagem */
                 url('../img/banner-solar.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
     
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +111,7 @@
 
 .col-sm h5{
     text-align: center !important; 
-    padding-top: 1.5rem;
+    padding-top: 1.5rem !important;
 }
 
 .col-sm p{
@@ -115,8 +119,12 @@
 }
 
 .espacamento{
-    margin: 40px 0 !important;
+    margin: 20px 0 !important;
 
+}
+
+.col-sm{
+    padding: 20px 0px ;
 }
 
 
@@ -152,6 +160,8 @@
     color:var(--branco-alle) !important;
 }
 
+
+
 .texto-sobre{
     text-align: left;
     padding-left: 70px;
@@ -169,24 +179,23 @@
 
 .card-cliente h3{
     text-align: left;
-    padding-left: 10px;
 }
 
 .card-cliente p{
     text-align: left;
-    padding-left: 10px;
+    padding-left: 0;
 }
 
-/* Cor de fundo leve para a página de contato */
-body {
+
+.body {
     background-color: #fcfcfc;
 }
 
-/* Círculos pequenos para os ícones de contato */
+
 .icon-circle-small {
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 153, 0, 0.1); /* Laranja clarinho */
+    background-color: rgba(255, 153, 0, 0.1);
     color: #ff9900;
     border-radius: 50%;
     display: flex;
@@ -195,14 +204,13 @@ body {
     font-size: 1.2rem;
 }
 
-/* Card de Dica Amarelo */
+
 .bg-light-yellow {
     background-color: #fff9e6 !important;
     border-left: 4px solid #ffcc00 !important;
     color: #856404;
 }
 
-/* Ajustes nos inputs para ficarem mais elegantes */
 .form-control {
     border: 1px solid #e0e0e0;
     padding: 10px;
@@ -311,28 +319,28 @@ body {
     color: var(--verde-alle);
 }
 
-/* Padronização dos Círculos de Ícone */
+
 .icon-circle {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    display: flex;          /* Essencial para alinhar o ícone */
-    align-items: center;    /* Centraliza verticalmente */
-    justify-content: center;/* Centraliza horizontalmente */
+    display: flex;          
+    align-items: center;    
+    justify-content: center;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
 
 .icon-circle:hover {
-    transform: scale(1.1); /* Efeito de destaque ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .icon-circle i {
-    font-size: 2rem; /* Tamanho do ícone */
-    display: block;  /* Garante que o ícone ocupe o espaço corretamente */
+    font-size: 2rem; 
+    display: block;  
 }
 
-h3 {
+.h3 {
     color: var(--verdee-alle);
     font-weight: 600;
     margin-top: 20px;
