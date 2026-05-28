@@ -226,11 +226,12 @@ html {
     border: 1px solid #e0e0e0;
     padding: 10px;
     border-radius: 6px;
+    
 }
 
 .form-control:focus {
     border-color: var(--verdee-alle);
-    box-shadow: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .upload-container {
@@ -358,4 +359,5 @@ html {
     border-bottom: 3px solid var(--verde-alle);
     display: inline-block;
     padding-bottom: 10px;
+    
 }
